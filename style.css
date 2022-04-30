@@ -57,10 +57,41 @@ button{
     grid-template-columns: 1fr 1fr;
 }
 
-
-
 .maincontent{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: lightpink;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 16px;
+    gap: 16px;
+}
+
+.projects{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.card{
+    background-color: lightgray;
+    padding: 16px;
+}
+
+.trending{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: lightgray;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+.announcements{
+    padding: 16px;
+    margin-top: 32px;
+    background-color: lightgray;
 }
