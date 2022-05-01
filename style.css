@@ -5,11 +5,10 @@ body{
 }
 
 .container{
-    padding: 16px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 200px 3fr;
+    grid-template-rows: 150px 3fr;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -18,16 +17,90 @@ body{
     display: grid;
     background-color: #f8fafc;
     padding: 16px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .header .top{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr 1fr 2fr;
+    place-content: center;
+}
+
+.top .icon{
+    align-self: center;
+    justify-self: end;
+    width: 24px;
+    height: 24px;
+}
+
+.top .magnify{
+    place-self: center;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.top .searchbar{
+    place-self: center;
+    width: 100%;
+}
+
+#search_bar{
+    background-color: #e2e8f0;
+    border-radius: 16px;
+    width: 100%;
+    height: 12px;
+    border: none;
+    padding: 16px;
+}
+
+.top .small-logo{
+    place-self: center;
+    height: 32px;
+    /* margin-left: 30px; */
+}
+
+.top .small-logo img{
+    width: 32px;
+    height: 32px;
+}
+
+.top .small-name{
+    font-size: 14px;
+    align-self: center;
+    font-weight: bold;
 }
 
 .header .bottom{
     display: grid;
     grid-template-columns: 1fr 5fr 5fr;
+}
+
+.bottom .big-logo{
+    width: 64px;
+    height: 64px;
+    place-self: center;
+    margin-left: 30px;
+}
+
+.bottom .big-logo img{
+    height: 64px;
+}
+
+.bottom .username{
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+.bottom .greetings{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.bottom .big-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
 }
 
 button{
@@ -36,12 +109,13 @@ button{
     border-radius: 24px;
     background-color: #60a5fa;
     color: white;
+    border: none;
 }
 
 .buttons{
     display: grid;
     grid-template-columns: repeat(3, minmax(80px, 110px));
-    /* justify-items: start; */
+    place-content: center;
 }
 
 .sidebar{
