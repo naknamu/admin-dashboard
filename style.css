@@ -126,7 +126,7 @@ button{
     grid-template-rows: 80px 300px;
     background-color: #60a5fa;
     color: white;
-    padding: 16px 0px 0px 32px;
+    padding: 16px 16px 0px 32px;
     font-weight: bold;
 }
 
@@ -176,14 +176,19 @@ button{
     gap: 16px;
 }
 
+.maincontent .title-projects{
+    margin: 0px;
+    align-self: end;
+}
+
 .projects{
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 2 / 5;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 }
 
 .card{
@@ -191,11 +196,11 @@ button{
     padding: 24px;
     border-left: 8px solid #f59e0b;
     border-radius: 8px;
-    height: 200px;
+    max-height: 200px;
 }
 
 .card .title{
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
@@ -213,12 +218,20 @@ button{
     padding-top: 16px;
 }
 
+.maincontent .title-announcements{
+    margin: 0px;
+}
+
 .announcements{
     padding: 16px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     background-color: #f8fafc;
     border-radius: 8px;
     display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
 }
 
 .announcements .title{
@@ -234,10 +247,49 @@ button{
     padding-bottom: 8px;
 }
 
+.maincontent .title-trending{
+    /* grid-row: 3 / 4;
+    grid-column: 2 / 3; */
+    /* margin-bottom: 20px; */
+    margin: 0px;
+    align-self: end;
+}
+
 .trending{
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 4 / 5;
     background-color: #f8fafc;
     padding: 16px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    border-radius: 8px;
+    align-items: center;
+}
+
+.trending .highlight{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.highlight .logo img{
+    width: 32px;
+    height: 32px;
+
+}
+
+.highlight .username{
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+.highlight .username a{
+    text-decoration: none;
+    color: black;
+}
+
+.highlight .project-title{
+    font-size: 12px;
+    color: #6b7280;
 }
